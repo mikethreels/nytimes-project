@@ -147,6 +147,14 @@ acronym {
   display: flex;
   flex: 1;
 }
+.flex-direction{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.washed-out { 
+  color: #757575;
+}
 
 /* general formatting */
 html {
@@ -160,6 +168,11 @@ nav {
   right: 0;
   border-bottom: 1px solid #e2e2e2;
   max-height: 42px;
+  background-color: white;
+}
+
+.font-weight, h1{
+  font-weight: 700;
 }
 
 /* Navigaton bar left */
@@ -203,4 +216,56 @@ nav {
 .navbar-extra-info,
 .social-icons {
   visibility: hidden;
+}
+
+/*Main Section*/
+main .main-header{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #121212;
+  font-style: italic;
+  margin-top: 100px;  
+  font-size: 1.9rem;
+  line-height: 3rem;
+  max-width: 600px;
+}
+.main-banner{
+  max-width: 80%;
+}
+
+figure{
+  margin: 0px;
+}
+figure img{
+  min-width: 100%;
+  max-width: 100%;
+}
+figcaption{
+  color: #666;
+  font-family: imperial, georgia,'times new roman',times,serif;
+  font-size: 0.9375em;
+  line-height: 1.25rem;
+  margin-right: 7px;
+}
+
+@font-face {
+  font-family: cheltenham;
+  src: url(/fonts/cheltenham/) format("truetype");
+}
+@font-face {
+  font-family: imperial;
+  src: url(/fonts/imperial/) format("truetype");
+}
+h1.customfont { 
+  font-family: cheltenham, georgia,'times new roman',times,serif;
+}
+.author-section {
+  max-width: 600px;
+  min-width: 600px;
+}
+.author{
+  float:left
+}
+
+.date-posted{
+  clear: both;
 }
