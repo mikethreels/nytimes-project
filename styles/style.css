@@ -1,81 +1,157 @@
 /* CCS reset */
-html,body,div,span,applet,object,iframe,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,label,legend,p,blockquote,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}body{line-height:1;color:black;background:white;}:focus{outline:0;}table{border-collapse:collapse;border-spacing:0;}caption,th,td{text-align:left;font-weight:normal;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}ol,ul{list-style:none;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}blockquote:before,blockquote:after,q:before,q:after{content:"";}blockquote,q{quotes:"" "";}abbr,acronym{border:0;}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+label,
+legend,
+p,
+blockquote,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
+body { line-height: 1; color: black; background: white; }
+:focus { outline: 0; }
+table { border-collapse: collapse; border-spacing: 0; }
+caption,
+th,
+td { text-align: left; font-weight: normal; }
+fieldset,
+img { border: 0; }
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var { font-style: normal; font-weight: normal; }
+ol,
+ul { list-style: none; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-size: 100%; font-weight: normal; }
+blockquote::before,
+blockquote::after,
+q::before,
+q::after { content: ""; }
+blockquote,
+q { quotes: "" ""; }
+abbr,
+acronym { border: 0; }
 
-/* helper classes */
+/* show flexboxes */
 .flexbox {
-    display: flex;
-    justify-content: center;
-    flex: 1;    /* added later */
+  display: flex;
+  flex: 1;
 }
 
-.flexbox .align-center { 
-    align-content: flex-center; 
+/* general formatting */
+html {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 42px;
-    border-bottom: 1px solid #e2e2e2;
-    
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #e2e2e2;
+  max-height: 42px;
 }
 
-.navbar-logo img{
-    height: 100%;
-    
-}
-
-.navbar-logo{
-    
-}
-
-.navbar-icons {
-    
-}
-
-
+/* Navigaton bar left */
 .material-icons {
-    margin: 8px;
-    font-size: 4px;
-}
-
-.navbar-buttons {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.subscribe-button, .login-button{
-    position: fixed;
-    right: 0px;
-    background-color: rgb(86, 123, 149);
-    color: rgb(255, 255, 255);
-    font-size: 11px;
-    line-height: 11px;
-    font-weight: 700;
-    border-radius: 3px;
-    border: 1px solid rgb(50, 104, 145);
-    padding: 11px 12px 8px;
-    margin: 5px;
-}
-
-.subscribe-button{
-    margin-right: 75px;
+  margin: 10px;
+  font-size: 4px;
 }
 
 .spaceandcosmos {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14.25px;
-    font-weight: 700;
-    letter-spacing: 0.7px;
-    line-height: 19px;
-    margin-top: 9px;
-    min-width: 150px; /* added later */
-    text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14.25px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  line-height: 19px;
+  margin: 12px 0 0 20px;
+  min-width: 150px;
+  text-transform: uppercase;
 }
 
-.navbar-extra-info, .social-icons {
-    visibility: hidden;
+/* Navigation bar middle */
+.navbar-logo img {
+  height: 65%;
+  margin: 10px;
+}
+
+/* Navigation bar right */
+.subscribe-button,
+.login-button {
+  float: right;
+  background-color: rgb(86, 123, 149);
+  color: rgb(255, 255, 255);
+  font-size: 11px;
+  line-height: 11px;
+  font-weight: 700;
+  border-radius: 3px;
+  border: 1px solid rgb(50, 104, 145);
+  padding: 11px 12px 8px;
+  margin: 5px 10px 5px 0;
+}
+
+.navbar-extra-info,
+.social-icons {
+  visibility: hidden;
 }
