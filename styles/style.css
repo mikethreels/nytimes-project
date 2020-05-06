@@ -4,23 +4,37 @@ html,body,div,span,applet,object,iframe,a,abbr,acronym,address,big,cite,code,del
 /* helper classes */
 .flexbox {
     display: flex;
+    justify-content: center;
+    flex: 1;    /* added later */
 }
 
-.flexbox.align-center { 
-    align-items: flex-start; 
+.flexbox .align-center { 
+    align-content: flex-center; 
 }
-
 
 nav {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    height: 42px;
+    border-bottom: 1px solid #e2e2e2;
+    
 }
 
-.navbar-icons{
-
+.navbar-logo img{
+    height: 100%;
+    
 }
+
+.navbar-logo{
+    
+}
+
+.navbar-icons {
+    
+}
+
 
 .material-icons {
     margin: 8px;
@@ -28,7 +42,27 @@ nav {
 }
 
 .navbar-buttons {
-    float: right;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.subscribe-button, .login-button{
+    position: fixed;
+    right: 0px;
+    background-color: rgb(86, 123, 149);
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    line-height: 11px;
+    font-weight: 700;
+    border-radius: 3px;
+    border: 1px solid rgb(50, 104, 145);
+    padding: 11px 12px 8px;
+    margin: 5px;
+}
+
+.subscribe-button{
+    margin-right: 75px;
 }
 
 .spaceandcosmos {
@@ -38,7 +72,7 @@ nav {
     letter-spacing: 0.7px;
     line-height: 19px;
     margin-top: 9px;
-    min-width: 11vw;
+    min-width: 150px; /* added later */
     text-transform: uppercase;
 }
 
