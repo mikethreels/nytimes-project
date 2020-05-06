@@ -152,8 +152,17 @@ acronym {
   display: flex;
   flex-direction: column;
 }
+.flex-end{
+  justify-content: flex-end;
+}
 .washed-out { 
   color: #757575;
+}
+.rounded-img{
+  background-color: #eee;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  padding:5%;
 }
 
 /* general formatting */
@@ -213,8 +222,7 @@ nav {
   margin: 5px 10px 5px 0;
 }
 
-.navbar-extra-info,
-.social-icons {
+.navbar-extra-info {
   visibility: hidden;
 }
 
@@ -255,6 +263,10 @@ figcaption{
   font-family: imperial;
   src: url(/fonts/imperial/) format("truetype");
 }
+@font-face {
+  font-family: franklin;
+  src: url(/fonts/franklin/) format("truetype");
+}
 h1.customfont { 
   font-family: cheltenham, georgia,'times new roman',times,serif;
 }
@@ -263,9 +275,56 @@ h1.customfont {
   min-width: 600px;
 }
 .author{
-  float:left
+  float:left;
+  margin-top:25px;
+  color:#333;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
 }
-
+.author a {
+  color: #333;
+ font-family: franklin, Arial, Helvetica, sans-serif;
+ 
+}
 .date-posted{
   clear: both;
+  min-width: 50%;
+  max-width: 50%;
+}
+ul{
+  min-width: 600px;
+  display: flex;
+  max-width: 600px;
+
+}
+
+.social-icons button{
+  background-color: #eee;
+  border: 1px solid #eee;
+  border-radius: 100%;
+  padding:5%
+
+}
+li{
+  margin:4px ;
+  height:30px;
+  width: 30px;
+}
+.facebook-icon,
+.twitter-icon, 
+.email-icon, 
+.share-icon{
+   height:15px;
+   width: 15px;
+   background-color:#eee;
+   padding: 5px;
+   border-radius: 100%;
+   
+}
+.bookmark-icon{
+  width: 16px;
+  height: 25px;
+}
+.bookmark-icon :hover{
+ opacity: 1000;
 }
