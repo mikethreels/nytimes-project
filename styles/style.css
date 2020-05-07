@@ -288,7 +288,7 @@ p a {
   font-size: .875rem;
   line-height: 1.125rem;
   font-weight: 500;
-  margin-left: 7px;
+  margin: 0px 0px 50px 7px;
 }
 .before-footer{
   align-self: flex-start;
@@ -297,4 +297,57 @@ p a {
   height: 1px;
   margin: 30px 0 13px 7px;
   background-color: #000;
+}
+.video {
+  width: 600px;
+  height: 319px;
+}
+
+iframe{
+  width: 100%;
+  height: 100%;
+}
+.video-caption{
+  margin: 10px 7px 0px 0;
+  width: 580px;
+  color: #666;
+  font-family: imperial, Georgia, 'Times New Roman', Times, serif;
+  font-size: 0.9375rem;
+}
+
+.video-credit {
+  color: #888;
+  font-family: imperial, Georgia, 'Times New Roman', Times, serif;
+  font-size: 0.8125rem;
+}
+
+.credit-container{
+  width: 580px;
+  /* margin-bottom: 50px;
+  margin-top: 10px; */
+  margin: 10px 20px 50px 0px;
+}
+
+.telescope-container {
+  width: 600px;
+}
+
+.telescope-picture {
+  width: 600px;
+  height: auto;
+}
+
+.paragraph-footer {
+  width: 56%;
+  font-family: franklin, Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  max-width: 600px;
+  color: rgb(102, 102, 102);
+}
+.paragraph-footer a {
+  color: rgb(102, 102, 102);
+}
+.paragraph-footer a:hover {
+  text-decoration: none;
 }
