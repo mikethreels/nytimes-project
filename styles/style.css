@@ -387,7 +387,7 @@ iframe{
 }
 
 .topic-description img{
-  width: 250px;
+  width: 100%;
   height:auto;
 }
 
@@ -397,6 +397,15 @@ iframe{
 }
 
 .extra-info {
-  margin: 0px 134px 0 134px;
+  margin: 0px 125px 0 125px;
   max-width: 100%;
+}
+
+.grid-container {
+  width: 80%;
+}
+
+.most-popular-articles {
+  width: 25%;
+  margin-left: 30px;
 }
