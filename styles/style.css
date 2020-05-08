@@ -185,7 +185,9 @@ figcaption .media-description {
 h1.customfont {
   font-family: cheltenham, georgia, 'times new roman', times, serif;
 }
-
+.customfont {
+  font-family: cheltenham, georgia, 'times new roman', times, serif;
+}
 .franklin {
   font-family: franklin, Arial, Helvetica, sans-serif;
 }
@@ -215,7 +217,7 @@ h1.customfont {
   color: #333;
   font-size: 0.8125rem;
   line-height: 1rem;
-  margin-top: -17px;
+  margin-top: 5px;
   margin-bottom: 1rem;
   font-weight: 500;
   float: left;
@@ -393,9 +395,23 @@ iframe{
 
 .mini-title{
   font-size: 10px;
-  margin-left: 250px;
+  margin-left: 39px;
+  float: right;
+  display: block;
 }
-
+.mini-title-container{
+  width: 100%;
+}
+.main-title h3{
+  color: rgb(120,120,120);
+  display: block;
+  font-size: 18px;
+  line-height: 22px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
 .extra-info {
   margin: 0px 125px 0 125px;
   max-width: 100%;
