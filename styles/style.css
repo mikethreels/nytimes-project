@@ -467,3 +467,14 @@ a .main-title:hover{
 .suggestions{
   width: 90%;
 }
+.most-popular-topics{
+  font-family: cheltenham, Georgia, 'Times New Roman', Times, serif;
+  color: rgb(18, 18, 18);
+  font-weight: 500;
+  font-size: 1.1875rem;
+  line-height: 1.4375rem;
+}
+.most-popular-container{
+  padding: 15px 0px 15px 0px;
+  border-top: 1px solid rgb(226, 226, 226);
+}
