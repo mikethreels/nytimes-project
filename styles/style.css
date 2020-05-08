@@ -1,151 +1,70 @@
-/* CCS reset */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-font,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-form,
-fieldset,
-input,
-textarea,
-label,
-legend,
-p,
-blockquote,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  font-family: inherit;
-  vertical-align: baseline;
+/* Fonts */
+@font-face {
+  font-family: cheltenham;
+  src: url(/fonts/cheltenham/) format("truetype");
 }
 
-body {
-  line-height: 1;
-  color: black;
-  background: white;
+@font-face {
+  font-family: imperial;
+  src: url(/fonts/imperial/) format("truetype");
 }
 
-:focus {
-  outline: 0;
+@font-face {
+  font-family: franklin;
+  src: url(/fonts/franklin/) format("truetype");
 }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+/* helper classes */
+a:-webkit-any-link {
+  cursor: pointer;
 }
 
-caption,
-th,
-td {
-  text-align: left;
-  font-weight: normal;
-}
-
-fieldset,
-img {
-  border: 0;
-}
-
-address,
-caption,
-cite,
-code,
-dfn,
-em,
-strong,
-th,
-var {
-  font-style: normal;
-  font-weight: normal;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 100%;
-  font-weight: normal;
-}
-
-blockquote::before,
-blockquote::after,
-q::before,
-q::after {
-  content: "";
-}
-
-blockquote,
-q {
-  quotes: "" "";
-}
-
-abbr,
-acronym {
-  border: 0;
-}
-
-/* show flexboxes */
 .flexbox {
   display: flex;
   flex: 1;
+}
+
+.flex-direction {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.flex-row { flex-direction: row; }
+.flex-end { justify-content: flex-end; }
+.flex.space-between { justify-content: space-between; }
+
+.washed-out {
+  color: #757575;
+  font-size: 13px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.paragraph-container {
+  width: 1170px;
+  margin: 0px auto 16px auto;
+}
+
+.header-container {
+  width: 600px;
+  margin: 0px auto 16px auto;
+}
+
+.paragraph {
+  width: 56%;
+  font-family: imperial, Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  max-width: 600px;
+  color: #333;
+}
+
+h2 {
+  color: #333;
+  font-size: 20px;
+  font-family: imperial, Georgia, 'Times New Roman', Times, serif;
 }
 
 /* general formatting */
@@ -160,6 +79,16 @@ nav {
   right: 0;
   border-bottom: 1px solid #e2e2e2;
   max-height: 42px;
+  background-color: white;
+}
+
+figure img {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.font {
+  font-weight: bold;
 }
 
 /* Navigaton bar left */
@@ -181,6 +110,7 @@ nav {
 
 /* Navigation bar middle */
 .navbar-logo img {
+  position: absolute;
   height: 65%;
   margin: 10px;
 }
@@ -200,7 +130,252 @@ nav {
   margin: 5px 10px 5px 0;
 }
 
-.navbar-extra-info,
-.social-icons {
+.navbar-extra-info {
   visibility: hidden;
+}
+
+/* Header Section */
+.main-header {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #121212;
+  font-style: italic;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  font-size: 1.9rem;
+  line-height: 3rem;
+  max-width: 600px;
+}
+
+.main-banner {
+  max-width: 80%;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  color: #666;
+  font-family: imperial, georgia, 'times new roman', times, serif;
+  font-size: 0.9375em;
+  line-height: 1.25rem;
+  margin-right: 7px;
+}
+
+.caption {
+  color: rgb(136, 136, 136);
+  font-size: 0.725rem;
+  line-height: 1.75rem;
+}
+
+figcaption .media-description {
+  color: rgb(102, 102, 102);
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  margin: 0.5rem 0;
+  max-width: 72rem;
+}
+
+h1.customfont {
+  font-family: cheltenham, georgia, 'times new roman', times, serif;
+}
+
+.franklin {
+  font-family: franklin, Arial, Helvetica, sans-serif;
+}
+
+.author-section {
+  max-width: 600px;
+  min-width: 600px;
+}
+
+.author {
+  float: left;
+  display: inline-block;
+  margin-top: 25px;
+  color: #333;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+}
+
+.author a {
+  color: #333;
+  text-decoration: underline;
+  text-decoration-color: #ccc;
+}
+
+.date-posted {
+  align-items: center;
+  color: #333;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  margin-top: -17px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  float: left;
+}
+
+.social-links {
+  position: relative;
+  min-width: 600px;
+  max-width: 600px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+li {
+  margin: 4px;
+  height: 30px;
+  width: 30px;
+}
+
+.social-icons {
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border: 1px solid #eee;
+  padding: 5px;
+  border-radius: 100%;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.bookmark-icon {
+  width: 25px;
+  background-color: #fff;
+  height: 25px;
+}
+.bookmark-icon:hover {
+  opacity: 0.3;
+}
+
+.social-icons:hover {
+  /* height: 15px;
+  width: 15px;
+  border: 1px solid #eee; */
+  background-color: #fff;
+  /* padding: 5px;
+  border-radius: 100%;
+  position: relative;
+  margin-bottom: 25px; */
+}
+
+p a {
+  color: #326891;
+}
+
+.inflation-container {
+  width: 80%;
+}
+
+.picture-header {
+  align-self: flex-start;
+  margin: 30px 50px 5px 7px;
+  color: #000;
+  font-size: 1.2rem;
+  font-family: cheltenham, Georgia, 'Times New Roman', Times, serif;
+}
+
+.picture-text {
+  margin: 0px 50px 5px 7px;
+  font-size: .875rem;
+  font-weight: 400;
+  font-family: cheltenham, Georgia, 'Times New Roman', Times, serif;
+  color: #666;
+  line-height: 1.125rem;
+}
+
+.picture-footer {
+  align-self: flex-start;
+  font-family: franklin, Arial, Helvetica, sans-serif;
+  color: #333;
+  font-size: .875rem;
+  line-height: 1.125rem;
+  font-weight: 500;
+  margin: 0px 0px 50px 7px;
+}
+.before-footer{
+  align-self: flex-start;
+  width: 60px;
+  content: '';
+  height: 1px;
+  margin: 30px 0 13px 7px;
+  background-color: #000;
+}
+.video {
+  width: 600px;
+  height: 319px;
+}
+
+iframe{
+  width: 100%;
+  height: 100%;
+}
+.video-caption{
+  margin: 10px 7px 0px 0;
+  width: 580px;
+  color: #666;
+  font-family: imperial, Georgia, 'Times New Roman', Times, serif;
+  font-size: 0.9375rem;
+}
+
+.video-credit {
+  color: #888;
+  font-family: imperial, Georgia, 'Times New Roman', Times, serif;
+  font-size: 0.8125rem;
+}
+
+.credit-container{
+  width: 580px;
+  /* margin-bottom: 50px;
+  margin-top: 10px; */
+  margin: 10px 20px 50px 0px;
+}
+
+.telescope-container {
+  width: 600px;
+}
+
+.telescope-picture {
+  width: 600px;
+  height: auto;
+}
+
+.paragraph-footer {
+  width: 56%;
+  font-family: franklin, Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  max-width: 600px;
+  color: rgb(102, 102, 102);
+}
+.paragraph-footer a {
+  color: rgb(102, 102, 102);
+}
+.paragraph-footer a:hover {
+  text-decoration: none;
+}
+
+.story-recirculation {
+  width: 80%;
+}
+
+.related-topics {
+  border-top: 1px solid black;
+  width: 75%;
+  height: 40px;
+  flex: 3;
+  margin-right: 30px;
+} 
+.most-popular {
+  border-top: 1px solid black;
+  width: 25%;
+  height: 40px;
+}
+.related-topics a,
+.most-popular a{
+  align-self: flex-end;
+  font-family: franklin, Arial, Helvetica, sans-serif;
+  color: black;
+  text-decoration: none;
 }
