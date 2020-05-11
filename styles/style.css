@@ -221,11 +221,11 @@ h1.customfont,
 
 .date-posted {
   align-items: center;
-  color: #999999;
+  color: #999;
   font-size: 0.7rem;
   line-height: 1rem;
   margin-top: 5px;
-  margin-bottom: 0rem;
+  margin-bottom: 0;
   font-weight: 500;
   float: left;
 }
@@ -488,7 +488,7 @@ a .main-title {
 }
 
 a .main-title:hover,
-.grid a >div >h3:hover {
+.grid a > div > h3:hover {
   opacity: 0.5;
 }
 
