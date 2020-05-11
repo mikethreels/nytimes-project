@@ -1,6 +1,6 @@
 # NY Times Page Clone
 
-![screenshot]()
+![screenshot](./images/website-printscreen.png)
 
 This is just a clone of youtube's video page.
 
@@ -10,7 +10,7 @@ This is just a clone of youtube's video page.
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://mikethreels.github.io/nytimes-project/)
 
 
 ## Getting Started
