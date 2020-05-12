@@ -3,6 +3,18 @@ p a {
 }
 
 /* helper classes */
+.font-franklin {
+  font-family: nyt-franklin, Arial, Helvetica, sans-serif;
+}
+
+.font-cheltenham {
+  font-family: nyt-cheltenham, Georgia, 'Times New Roman', Times, serif;
+}
+
+.font-imperial {
+  font-family: nyt-imperial, Georgia, 'Times New Roman', Times, serif;
+}
+
 a:-webkit-any-link {
   cursor: pointer;
 }
@@ -51,7 +63,6 @@ a:-webkit-any-link {
 
 .paragraph-container p {
   width: 56%;
-  font-family: nyt-imperial, Georgia, 'Times New Roman', Times, serif;
   font-size: 1.125rem;
   line-height: 1.625rem;
   max-width: 600px;
@@ -66,7 +77,6 @@ h1 {
 h2 {
   color: #333;
   font-size: 20px;
-  font-family: nyt-imperial, Georgia, 'Times New Roman', Times, serif;
 }
 
 .grid {
@@ -101,9 +111,9 @@ body {
   height: 100%;
 }
 
-.font {
+/* .font {
   font-weight: bold;
-}
+} */
 
 /* Navigaton bar left */
 .material-icons {
@@ -112,18 +122,20 @@ body {
   cursor: pointer;
 }
 
-.spaceandcosmos a{
+.spaceandcosmos a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14.25px;
   font-weight: 700;
   letter-spacing: 0.7px;
-  line-height: 40px;
+  line-height: 19px;
   margin: 12px 0 0 20px;
   min-width: 150px;
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
-
+  display: block;
+  position: absolute;
+  left: 105px;
 }
 
 /* Navigation bar middle */
@@ -174,7 +186,6 @@ figure {
 
 figcaption {
   color: #666;
-  font-family: nyt-imperial, georgia, 'times new roman', times, serif;
   font-size: 0.9375em;
   line-height: 1.25rem;
   margin-right: 7px;
@@ -194,18 +205,12 @@ figcaption .media-description {
   max-width: 72rem;
 }
 
-h1.customfont,
-.customfont {
-  font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
-}
-
 .author-section {
   max-width: 600px;
   min-width: 600px;
 }
 
 .author {
-  float: left;
   display: inline-block;
   margin-top: 25px;
   color: #333;
@@ -283,21 +288,18 @@ li {
   margin: 30px 50px 5px 7px;
   color: #000;
   font-size: 1.2rem;
-  font-family: nyt-cheltenham, Georgia, 'Times New Roman', Times, serif;
 }
 
 .picture-text {
   margin: 0 50px 5px 7px;
   font-size: 0.875rem;
   font-weight: 400;
-  font-family: nyt-cheltenham, Georgia, 'Times New Roman', Times, serif;
   color: #666;
   line-height: 1.125rem;
 }
 
 .picture-footer {
   align-self: flex-start;
-  font-family: nyt-franklin, Arial, Helvetica, sans-serif;
   color: #333;
   font-size: 0.875rem;
   line-height: 1.125rem;
@@ -328,13 +330,11 @@ iframe {
   margin: 10px 7px 0 0;
   width: 580px;
   color: #666;
-  font-family: nyt-imperial, Georgia, 'Times New Roman', Times, serif;
   font-size: 0.9375rem;
 }
 
 .video-credit {
   color: #888;
-  font-family: nyt-imperial, Georgia, 'Times New Roman', Times, serif;
   font-size: 0.8125rem;
 }
 
@@ -354,25 +354,15 @@ iframe {
 
 .paragraph-container .paragraph-footer {
   width: 56%;
-  font-family: nyt-franklin, Arial, Helvetica, sans-serif;
   font-size: 0.7rem;
   line-height: 1rem;
   max-width: 600px;
   color: rgb(102, 102, 102);
 }
 
-.related-topics a,
-.most-popular a {
-  align-self: flex-end;
-  font-family: nyt-franklin, Arial, Helvetica, sans-serif;
-  color: black;
-  text-decoration: none;
-}
-
 .footer-links a {
   color: rgb(0, 0, 0);
   display: inline-block;
-  font-family: nyt-franklin, helvetica, arial, sans-serif;
   text-transform: capitalize;
   width: 150px;
   font-size: 13px;
@@ -405,7 +395,6 @@ iframe {
   width: 200px;
   color: rgb(0, 0, 0);
   text-decoration: none;
-  font-family: nyt-franklin, Arial, Helvetica, sans-serif;
   padding-left: 3px;
 }
 
@@ -414,7 +403,6 @@ iframe {
   position: absolute;
   text-decoration: none;
   color: rgb(0, 0, 0);
-  font-family: nyt-franklin, Arial, Helvetica, sans-serif;
   font-weight: 900;
   text-transform: capitalize;
 }
@@ -464,6 +452,7 @@ iframe {
 .mini-title-container {
   width: 100%;
   height: 18px;
+
   /* padding-top: 4px; */
 }
 
@@ -472,6 +461,7 @@ iframe {
   display: block;
   font-size: 18px;
   line-height: 22px;
+
   /* margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0;
@@ -538,7 +528,6 @@ a .main-title:hover,
 }
 
 .most-popular-topics {
-  font-family: nyt-cheltenham, Georgia, 'Times New Roman', Times, serif;
   color: rgb(18, 18, 18);
   font-weight: 500;
   font-size: 1.1875rem;
@@ -682,7 +671,6 @@ footer {
 .box-end > div {
   padding-top: 12px;
   margin-bottom: 20px;
-  font-family: sans-serif, nyt-franklin;
   cursor: pointer;
 }
 
