@@ -1,8 +1,8 @@
+/* helper classes */
 p a {
   color: #326891;
 }
 
-/* helper classes */
 .font-franklin {
   font-family: nyt-franklin, Arial, Helvetica, sans-serif;
 }
@@ -70,15 +70,6 @@ a:-webkit-any-link {
   margin: 0 auto 16px auto;
 }
 
-h1 {
-  font-size: 2.5rem;
-}
-
-h2 {
-  color: #333;
-  font-size: 20px;
-}
-
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 25%;
@@ -86,9 +77,6 @@ h2 {
 }
 
 /* general formatting */
-html {
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 nav {
   position: fixed;
@@ -101,6 +89,15 @@ nav {
   z-index: 999;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  color: #333;
+  font-size: 20px;
+}
+
 figure img {
   min-width: 100%;
   max-width: 100%;
@@ -110,10 +107,6 @@ body {
   overflow-x: hidden;
   height: 100%;
 }
-
-/* .font {
-  font-weight: bold;
-} */
 
 /* Navigaton bar left */
 .material-icons {
@@ -279,6 +272,7 @@ li {
   background-color: #fff;
 }
 
+/* Main section */
 .inflation-container {
   width: 80%;
 }
@@ -360,6 +354,12 @@ iframe {
   color: rgb(102, 102, 102);
 }
 
+.paragraph-footer a {
+  color: rgb(102, 102, 102);
+}
+
+/* Aside section */
+
 .footer-links a {
   color: rgb(0, 0, 0);
   display: inline-block;
@@ -376,10 +376,6 @@ iframe {
 .grid a {
   text-decoration: none;
   color: rgb(18, 18, 18);
-}
-
-.paragraph-footer a {
-  color: rgb(102, 102, 102);
 }
 
 .footer-nav a {
@@ -452,8 +448,6 @@ iframe {
 .mini-title-container {
   width: 100%;
   height: 18px;
-
-  /* padding-top: 4px; */
 }
 
 .main-title h3 {
@@ -461,11 +455,6 @@ iframe {
   display: block;
   font-size: 18px;
   line-height: 22px;
-
-  /* margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0;
-  margin-inline-end: 0; */
 }
 
 .extra-info {
@@ -491,8 +480,6 @@ a .main-title:hover,
   width: 25%;
   margin-left: 30px;
 }
-
-/* Aside section */
 
 .related-header {
   padding-top: 15px;
